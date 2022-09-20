@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos Jquery</title>
+  </head>
+  <body>
+    <h1 id="title">Primeiro código Jquery</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      function initPage() {
+        alert("Minha página carregou");
+        console.log("Página ok");
+      }
+
+      function stylizeTitle() {
+        document.getElementById("title").style.color = "red";
+      }
+
+      // window.onload = initPage();
+      $(document).ready(function () {
+        initPage();
+        stylizeTitle();
+      });
+    </script>
+  </body>
+</html>
